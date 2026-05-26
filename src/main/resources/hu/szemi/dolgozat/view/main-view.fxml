@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="16.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hu.szemi.dolgozat.controller.MainController">
+    <padding>
+        <Insets top="40.0" right="40.0" bottom="40.0" left="40.0"/>
+    </padding>
+
+    <Label text="Főoldal" styleClass="title"/>
+    <Label text="Válasszon oldalt:" styleClass="subtitle"/>
+
+    <Button text="Névjegy" onAction="#openAbout" styleClass="menu-button"/>
+    <Button text="Fájl tartalma (táblázat)" onAction="#openData" styleClass="menu-button"/>
+</VBox>

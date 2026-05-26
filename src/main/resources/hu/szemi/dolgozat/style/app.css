@@ -1,0 +1,54 @@
+/*
+ * Név: <A SAJAT NEVED>
+ * Csoport: <A CSOPORTOD>
+ * Készítés dátuma: 2026-05-26
+ * Feladat: Alkalmazás stílus
+ */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #e9f4ff, #d9f6e2);
+}
+
+.title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d3557;
+}
+
+.subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: #264653;
+}
+
+.info {
+    -fx-font-size: 18px;
+    -fx-text-fill: #223;
+}
+
+.menu-button {
+    -fx-pref-width: 260px;
+    -fx-font-size: 15px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #2a9d8f;
+    -fx-text-fill: white;
+    -fx-padding: 10px 14px;
+}
+
+.menu-button:hover {
+    -fx-background-color: #21867a;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #457b9d;
+}
+
+.table-view .column-header,
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

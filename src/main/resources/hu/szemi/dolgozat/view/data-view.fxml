@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="14.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hu.szemi.dolgozat.controller.DataController">
+    <padding>
+        <Insets top="24.0" right="24.0" bottom="24.0" left="24.0"/>
+    </padding>
+
+    <Label text="Fájl tartalma" styleClass="title"/>
+
+    <TableView fx:id="dataTable" prefHeight="460.0" prefWidth="840.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="#" prefWidth="70.0"/>
+            <TableColumn fx:id="nevColumn" text="Név" prefWidth="180.0"/>
+            <TableColumn fx:id="duloColumn" text="Dűlő" prefWidth="220.0"/>
+            <TableColumn fx:id="termesColumn" text="Termés (q)" prefWidth="130.0"/>
+            <TableColumn fx:id="betakaritasColumn" text="Betakarítás vége" prefWidth="220.0"/>
+        </columns>
+    </TableView>
+
+    <Button text="Vissza a főoldalra" onAction="#backToMain" styleClass="menu-button"/>
+</VBox>
